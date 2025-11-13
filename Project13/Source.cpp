@@ -99,7 +99,7 @@ class Airplane : public Transport
 	double wingspan;
 	int turbines;
 public:
-	Airplane() {}
+	Airplane() { NumberOfHoursInTheAir = 0.0; wingspan = 0.0; turbines = 0; }
 	Airplane(string n, double m, string c, int num, double nu, double wing, int t)
 	{
 		name = n;
@@ -147,7 +147,7 @@ class Vessel : public Transport
 	double NumberOfKnockouts;
 	double UnderwaterWatch;
 public:
-	Vessel() {}
+	Vessel() { NumberOfKnockouts = 0.0; UnderwaterWatch = 0.0; }
 	Vessel(string n, double m, string c, int num, string f, double kno, double und)
 	{
 		name = n;
